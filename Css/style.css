@@ -1,0 +1,130 @@
+:root{
+    --violet:hsl(257, 40%, 49%);
+    --softMargenta: hsl(300, 69%, 71%);
+    --white: hsl(0, 0%, 100%);
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+   max-width: 100%;
+    overflow: hidden;
+   background-image: url(../images/bg-desktop.svg);
+   background-color: var(--violet);
+  width: 100%;
+  height: 100vh;
+  font-family: 'open Sans', sans-serif;
+    font-weight: 400;
+}
+.logo{
+margin-left: 40px;
+}
+.picture{
+   width: 100%;
+   padding: 0 50px 0px;
+}
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+   
+}
+.content{
+    padding: 0px;
+    margin-left: 10px;
+}
+h2{
+    font-family: 'Poppins', sans-serif;
+   
+    color: var(--white);
+    font-weight: 600;
+    font-size: 30px;
+}
+p{
+    color: var(--white);
+    font-family: 'open Sans', sans-serif;
+    font-weight: 400;
+}
+.register{
+    border: none;
+    background-color: var(--white);
+    color: var(--violet);
+    border-radius: 20px;
+    padding: 9px 45px;
+    cursor: pointer;
+    box-shadow: 1px 5px 5px black;
+}
+.register:hover{
+    background-color: var(--softMargenta);
+    border: 1px solid var(--softMargenta);
+    opacity: 1;
+}
+.icons{
+    float: right;
+    clear: right;
+    padding: 10px 20px 10px 0px;
+}
+.fab{
+    color: var(--white);
+    border: 1px solid white;
+    padding: 5px;
+    border-radius: 50px;
+    font-size: 15px;
+}
+.fab:hover{
+    background-color: var(--softMargenta);
+    border: 1px solid var(--softMargenta);
+    opacity: 1;
+}
+@media only screen and (max-width:600px){
+    body{
+        overflow: visible;
+    }
+    .logo{
+        margin: 10px 20px 20px;
+    }
+ .container{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    text-align: justify;
+    margin: 10px 10px;
+}
+h2{
+    text-align: center;
+    font-size: 32px;
+}
+p{
+    line-break: auto;
+    text-align: center;
+    width: fit-content;
+}
+.register{
+   margin-left: 130px;
+}
+
+.icons{
+    display: flex;
+    float: none;
+    align-items: center;
+    justify-content: center;
+    margin: 30px;
+}
+.fab{
+    display: flex;
+    float: none;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+}
+
+}
+
